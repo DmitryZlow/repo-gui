@@ -1,9 +1,12 @@
-a = [123, 5.5, 'text', False, [12468898] ]
-print(type(a))
-print(type(a[0]))
-print(type(a[1]))
-print(type(a[2]))
-print(type(a[3]))
-print(type(a[4]))
+my_int = 10
+my_float = 10.2
+my_str = "Hello, bro"
+my_list = ['B', '25']
+my_tuple = ('C', '5')
+my_dict = {'city': 'Moscow', 'country': 'Russia'}
+
+super_list = [my_int, my_float, my_str, my_list, my_tuple, my_dict]
+for i in super_list:
+    print(f'{i} is {type(i)}')
 
 

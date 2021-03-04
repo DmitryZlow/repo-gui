@@ -1,20 +1,17 @@
-#не нашел метода обмена значений, не понял как применить input
-a = [123, 5.5, 'text', False, [12468898]]
-
-b = a[0]
-c = a[1]
-a.insert(1, b)
-a.insert(0, c)
-a.pop(2)
-a.pop(2)
-
-b = a[2]
-c = a[3]
-a.insert(2,c)
-a.insert(3, b)
-a.pop(4)
-a.pop(4)
-
-print(a)
-
+my_list = ['z', 'x', 'c', 'v', 'b']
+if len(my_list) % 2 == 0:
+    i = 0
+    while i < len(my_list):
+        el = my_list[i]
+        my_list[i] = my_list[i+1]
+        my_list[i+1] = el
+        i += 2
+else:
+    i = 0
+    while i < len(my_list) - 1:
+        el = my_list[i]
+        my_list[i] = my_list[i + 1]
+        my_list[i + 1] = el
+        i += 2
+print(my_list)
 
