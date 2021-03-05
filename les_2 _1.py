@@ -1,12 +1,8 @@
-my_int = 10
-my_float = 10.2
-my_str = "Hello, bro"
-my_list = ['B', '25']
-my_tuple = ('C', '5')
-my_dict = {'city': 'Moscow', 'country': 'Russia'}
+a = [233, 'hello world', 45.001, [34,99,323,4], 34679, {'ffd':12,'wwwr':222}, True, ('435754685'), (3,6,68,6,867)]
+i = 0
+while i < len(a):
+    print(type(a[i]))
+    i += 1
 
-super_list = [my_int, my_float, my_str, my_list, my_tuple, my_dict]
-for i in super_list:
-    print(f'{i} is {type(i)}')
 
 
